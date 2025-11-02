@@ -1,50 +1,76 @@
-# Welcome to your Expo app 👋
+# 1. Create Your First Mobile App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Objective
+Set up a first mobile application using the **Expo Router template** and document the scaffolding process. Understand the file structure of a React Native application using Expo.
 
-## Get started
+---
 
-1. Install dependencies
+## Steps for Scaffolding
 
-   ```bash
-   npm install
-   ```
+1. **Navigate to the project directory**  
+```bash
+cd prodev-mobile-setup
+````
 
-2. Start the app
+2. **Initialize a new Expo project** using the latest Expo Router template:
 
-   ```bash
-   npx expo start
-   ```
+```bash
+npx create-expo-app@latest .
+```
 
-In the output, you'll find options to open the app in a
+3. **Modify the Home Screen**
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+* Open `app/(tabs)/index.tsx`
+* Locate the default text `Welcome!`
+* Change it to:
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+```tsx
+<Text>First App Created</Text>
+```
 
-## Get a fresh project
+4. **Run and Test the Application**
 
-When you're ready, run:
+```bash
+npx expo start
+```
+
+* **iOS Devices:** Scan the QR code in the terminal using the Camera app
+* **Android Devices:** Scan the QR code using Expo Go
+
+---
+
+## Resetting the Project
+
+Run the reset command:
 
 ```bash
 npm run reset-project
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+**Observation:**
 
-## Learn more
+* The command removes generated caches and temporary files
+* Restores the project to a clean initial state without affecting the source code
+* Helps fix issues caused by corrupted dependencies or builds
 
-To learn more about developing your project with Expo, look at the following resources:
+---
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## Outcome
 
-## Join the community
+* Successfully created a React Native project using the Expo Router template
+* Modified the home screen to display `First App Created`
+* Tested the app on a physical device using Expo Go
+* Learned the effects of resetting the project with `npm run reset-project`
 
-Join our community of developers creating universal apps.
+---
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## Repository Info
+
+* **GitHub Repository:** `prodev-mobile-setup`
+* **Directory:** `mobile-development-app-0x00`
+* **Files:**
+
+  * `README.md`
+  * `app-example/app/(tabs)/index.tsx`
+  * `app-example/constants/Colors.tsx`
+  * `app-example`
